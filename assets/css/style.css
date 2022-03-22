@@ -720,6 +720,11 @@
       width:100%;
       padding:4rem 0;
     }
+    .menu-link{
+      height:4rem;
+      border:1px solid white;
+    }
+
     
     .book i{
       margin-top:1rem;
@@ -860,6 +865,10 @@
     form input{
   /*     margin-top:-20rem; */
     }
+
+    footer .copyRights{
+      width:80%;
+    }
   }
   
   
@@ -932,14 +941,31 @@
     }
 
     .order-online ul{
-      /* border:1px solid white; */
-      width:130%;
+    
+      width:170%;
+      
     }
+
+    .order-online li a{
+      border:none;
+      
+    }
+
+  .order-online li{
+    border-bottom:1px solid white;
+    height:3rem;
+    margin-bottom:2rem;
+  }
     .card{
       
       width:6rem !important;
       height:10rem;
       
+    }
+
+    .book ul{
+      height:6rem;
+      gap:2rem;
     }
 
     .arrowDown{
@@ -1011,3 +1037,5 @@
       height:25rem;
     }
   }
+
+  
