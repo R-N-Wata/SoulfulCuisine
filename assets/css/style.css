@@ -650,6 +650,7 @@
   
   
   @media(max-width:650px){
+    
     .toggleBtn{
       display:flex;
       width:10%;
@@ -804,7 +805,7 @@
       margin-top:-1rem;
       padding-top:1rem;
      width:200%;
-     
+     overflow-x: hidden;
      
 
       }
