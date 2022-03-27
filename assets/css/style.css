@@ -401,7 +401,17 @@
   .order-online h2{
     margin-bottom:1rem;
   }
+
+  /* menu button */
   
+  .toggleBtn-menu{
+    font-size: 1.3rem;
+    /* position:absolute; */
+ 
+    display:none;
+  
+    
+  }
   .order-online ul{
     margin:2rem 0;
    display:flex;
@@ -651,7 +661,7 @@
       background:black;
   /*     position:absolute; */
 
-  border:1px solid white;
+ 
       
     }
     
@@ -735,18 +745,14 @@
       align-items:center;
       
     }
-    .order-online li{
-     width:75%;
-      padding-bottom:1rem;
-    }
+  
     
     
     .order-online div{
       display:flex;
-      flex-wrap:wrap;
-      width:150%;
-      justify-content:center;
-      align-items:center;
+      
+     width:150%;
+    
       
   
     }
@@ -754,6 +760,7 @@
       
       width:8rem !important;
       height:10rem;
+      overflow-y: hidden;
       
     }
     .card .back{
@@ -767,35 +774,64 @@
     .card h3{
       font-size:.5rem;
     }
-    
-    .order-online ul{
-      /* gap:-10px; */
-      width:90%;
-      /* border:1px solid white; */
-      align-items: center;
-      justify-content: center;
-      /* margin-right:2rem; */
-      margin:-1rem 2rem -1rem 0 ;
+    .toggleBtn-menu{
+      display:flex;
+      margin-bottom:1rem;
+      gap:10px;
+      text-align:center;
+
+    }
+
+    .toggleBtn-menu i {
+      margin-top:.2rem
+    }
+
+    .toggleBtn-menu:hover{
+      color:orange
     }
     
-  
+    .menu-navrbarLinks.hidden{
+      display:none;  
+      
+    }
+    .order-online .menu-navrbarLinks ul{
+      flex-direction:column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+     background:rgba(0,0,0,.9);
+      padding-right:40px;
+      margin-top:-1rem;
+      padding-top:1rem;
+     width:200%;
+     
+     
+
+      }
+
+      .order-online li{
+       
+        display:inline-block;
+        padding:none;
+      }
+
+      .order-online li:last-child a{
+        border-bottom: none;
+      }
+
+
+    .order-online li a{
+
+      padding:none !important;
+    }
     
     .order-online li a:hover{
       color:white;
       border:none;
     }
-    .order-online li a{
-    padding:0 .5rem 0 .5rem;
-  
-    border:none;
-    
-    
-  }
+   
 
-  .order-online li{
-    border-bottom:1px solid white;
-    margin-bottom:2.5rem;
-  }
+  
     
     .book{
       flex-direction:column;
@@ -924,10 +960,10 @@
   
   
   @media (max-width: 400px){
-    
+/*     
     *{
       overflow-X:hidden;
-    }
+    } */
     main, .about-us, .order-online, .book, .testimonials, footer{
       width:100%;
     }
@@ -940,7 +976,7 @@
       width:100%;
     }
 
-    .order-online ul{
+    /* .order-online ul{
      
       width:100%;
     }
@@ -952,13 +988,13 @@
       padding-right:.5rem;
     /* padding-top:.3rem; */
       
-    }
+  /*  }
 
   .order-online li{
     border:none;
     height:6rem;
     margin-bottom:-.5rem;
-  }
+  } */
     .card{
       
       width:6rem !important;
@@ -1013,9 +1049,9 @@
      
     }
 
-    .order-online ul{
+    /* .order-online ul{
       width:240%;
-    }
+    } */
 
     
     .card{
