@@ -650,7 +650,9 @@
   
   
   @media(max-width:650px){
-    
+    *{
+      overflow-x: hidden;
+    }
     .toggleBtn{
       display:flex;
       width:10%;
@@ -723,9 +725,8 @@
       width:100%;
       padding:4rem 0;
     }
-    .menu-link{
-      height:4rem;
-      border:1px solid white;
+    .menu-link {
+     display:none
     }
 
     
@@ -751,12 +752,13 @@
     
     .order-online div{
       display:flex;
-      
-     width:150%;
-    
+      justify-content: center;
+     width:109%;
+     /* overflow-x: hidden; */
       
   
     }
+
     .card{
       
       width:8rem !important;
@@ -795,6 +797,8 @@
       display:none;  
       
     }
+
+    
     .order-online .menu-navrbarLinks ul{
       flex-direction:column;
       justify-content: center;
@@ -804,8 +808,8 @@
       padding-right:40px;
       margin-top:-1rem;
       padding-top:1rem;
-     width:200%;
-     overflow-x: hidden;
+     
+     
      
 
       }
