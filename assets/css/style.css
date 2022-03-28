@@ -715,15 +715,32 @@
     .about-us{
       padding:4rem 0;
       gap:none;
+      border:1px solid white;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+      text-align: center;
+
+    }
+    .about-us *{
+      width:90% !important;
+      margin:0 auto;
     }
     
     .about-us>div{
       display:none;
     }
     
-    .about-us> div + div{
+    .about-us h2{
+     width:70% !important;
+    }
+    /* .about-us> div + div{
       width:100%;
       padding:4rem 0;
+    } */
+
+    .about-us p{
+      margin-left:.2rem;
     }
     .menu-link {
      display:none
@@ -750,21 +767,23 @@
   
     
     
-    .order-online div{
+    /* .order-online div{
       display:flex;
       justify-content: center;
      width:109%;
      /* overflow-x: hidden; */
       
-  
-    }
+
 
     .card{
       
       width:8rem !important;
       height:10rem;
-      overflow-y: hidden;
       
+      
+    }
+    .card * {
+      overflow-y: hidden; 
     }
     .card .back{
       flex-direction:column;
@@ -794,30 +813,33 @@
     }
     
     .menu-navrbarLinks.hidden{
-      display:none;  
+      display:flex;  
       
     }
 
+    .menu-navrbarLinks {
+        background:rgba(0,0,0,.9);
+        display:none;
+        width:100%;
+        margin-bottom:1rem;
+        margin-top:-.5rem;
+    }
     
     .order-online .menu-navrbarLinks ul{
       flex-direction:column;
       justify-content: center;
       text-align: center;
       align-items: center;
-     background:rgba(0,0,0,.9);
-      padding-right:40px;
       margin-top:-1rem;
       padding-top:1rem;
-     
-     
-     
+      margin-bottom:0;
 
       }
 
       .order-online li{
        
-        display:inline-block;
-        padding:none;
+        /* display:inline-block; */
+        padding:0;
       }
 
       .order-online li:last-child a{
@@ -827,7 +849,8 @@
 
     .order-online li a{
 
-      padding:none !important;
+      padding:.8rem;
+
     }
     
     .order-online li a:hover{
@@ -911,6 +934,7 @@
       width:80%;
     }
   }
+
   
   
   @media (max-width:950px){
@@ -921,6 +945,9 @@
       text-align:center;
     }
     
+    .about-us div{
+    
+    }
     .about-us div + div{
       width:100%;
       display:flex;
@@ -928,8 +955,13 @@
       align-items:center;
       justify-content:center;
     }
+
+    .about-us h2{
+      width:50%;
+      margin-bottom:1rem;
+    }
     .about-us p{
-      width:80%;
+      width:60%;
     }
     
     .book{
