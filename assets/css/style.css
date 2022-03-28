@@ -715,7 +715,6 @@
     .about-us{
       padding:4rem 0;
       gap:none;
-      border:1px solid white;
       flex-direction:column;
       justify-content:center;
       align-items: center;
