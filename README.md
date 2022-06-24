@@ -4,7 +4,7 @@ Stylish restaurant landing page, showcasing info, menu, reviews and contact deta
 
 **Link to project:** https://soulfulcuisine.netlify.app/
 
-[alt tag](http://placecorgi.com/1200/650)
+<!-- [alt tag](http://placecorgi.com/1200/650) -->
 
 ## How It's Made:
 
