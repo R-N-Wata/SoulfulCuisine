@@ -54,4 +54,33 @@ toggleMenu.addEventListener("click", function () {
 
 
 
+const menuBtns = document.querySelectorAll('.menu-btn')
+const mainContainer = document.querySelector('.main-recipes')
+const starterContainer = document.querySelector('.starter-menu')
+const dessertContainer = document.querySelector('.dessert-menu')
+
+menuBtns.forEach(el => el.addEventListener('click', () =>{
+  if(el.textContent.includes('Main')){
+
+    mainContainer.classList.remove('hidden')
+    starterContainer.classList.add('hidden')
+    dessertContainer.classList.add('hidden')
+
+  }else if(el.textContent.includes('Starters')){
+
+    
+    starterContainer.classList.remove('hidden')
+    mainContainer.classList.add('hidden')
+    dessertContainer.classList.add('hidden')
+
+  }else  if(el.textContent.includes('Dessert')){
+
+    dessertContainer.classList.remove('hidden')
+    mainContainer.classList.add('hidden')
+    starterContainer.classList.add('hidden')
+  }
+}))
+
+
+
 
